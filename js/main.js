@@ -20,7 +20,7 @@ async function init() {
 
 async function loadData() {
   try {
-    const res = await fetch('./data.json');
+    const res = await fetch('data.json');
     state.extensions = await res.json();
   } catch (err) {
     console.error('Failed to load extensions:', err);
