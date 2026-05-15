@@ -165,6 +165,16 @@ button {
   margin: 0 auto;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  height: 32px;
+  width: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -193,8 +203,26 @@ header {
 
 .extensions-list {
   display: grid;
-   grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: var(--spacing-150);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-800) var(--spacing-400);
+  background: var(--clr-neutral-0);
+  border-radius: var(--radius-20);
+  border: 1px dashed var(--clr-neutral-300);
+  grid-column: 1 / -1;
+}
+
+[data-theme="dark"] .empty-state {
+  background: var(--clr-neutral-800);
+  border: 1px dashed var(--clr-neutral-600);
+}
+
+.empty-state p {
+  color: var(--text-muted);
 }
 
 
@@ -302,6 +330,13 @@ header {
   background-color: var(--clr-neutral-800);
   border: 1px solid var(--clr-neutral-600);
   box-shadow: none;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .card-header {
