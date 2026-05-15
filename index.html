@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo-wrapper">
+        <img src="./assets/images/logo.svg" alt="" class="main-logo logo-light">
+        <img src="./assets/images/logo-white.svg" alt="" class="main-logo logo-dark">
+      </div>
+      <button id="theme-toggle" aria-label="Toggle theme" class="tp-6">
+        <img src="./assets/images/icon-moon.svg" alt="" class="icon-moon">
+        <img src="./assets/images/icon-sun.svg" alt="" class="icon-sun">
+      </button>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Extension filters">
+        <h1 class="tp-1">Extensions List</h1>
+        <div class="filter-buttons">
+          <button class="filter-btn tp-3" data-filter="all">All</button>
+          <button class="filter-btn tp-3" data-filter="active">Active</button>
+          <button class="filter-btn tp-3" data-filter="inactive">Inactive</button>
+        </div>
+      </section>
+
+      <ul id="extensions-list" class="extensions-list">
+      </ul>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by A.B
+    </footer>
+  </div>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
